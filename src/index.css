@@ -11,3 +11,271 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  /*background-color: #ccf;*/
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left-panel {
+  /*background-color: pink;*/
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right-panel {
+  /*background-color: yellowgreen;*/
+  background-color: cornflowerblue;
+  position: absolute;
+  left: 40%;
+  top: 0px;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.list-panel {
+  /*background-color: lightblue;*/
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: calc(100% - 75px);
+  overflow: auto;
+}
+
+.detail-panel {
+  /*background-color: lightcoral;*/
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: calc(100% - 75px);
+}
+
+.input-panel {
+  /*background-color: lightseagreen;*/
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: calc(100% - 20px);
+}
+
+input[type=text], textarea{
+  margin: 0px;
+  padding: 5px 5px;
+  width: 100%;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+textarea {
+  resize: none;
+  height: 6em;
+}
+select {
+  border: 0px;
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  outline: none;
+}
+option {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 5px;
+}
+button {
+  background-color: #1b61e4;
+  border: 0px;
+  padding: 10px 5px;
+  width: 25%;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #fff;
+}
+button:hover {
+  background-color: #103a89;
+  color: #fff;
+}
+button:disabled {
+  background-color: #ccc;
+  color: #999;
+}
+
+.button-panel {
+  /*background-color: lightgreen;*/
+  padding-top: 30px;
+}
+#ButAddEvent {
+  float: left;
+}
+#ButUpdateEvent {
+  float: right;
+}
+#ButDeleteEvent {
+  float: right;
+  margin-left: 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  width: 98%;
+  margin: 0px auto;
+}
+
+li {
+  /*background-color: yellow;*/
+  background-color: cornflowerblue;
+  margin: 1px;
+  padding: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  /*display: table;
+  width: 98%;*/
+  box-sizing: border-box;
+}
+li.hide {
+  display: none;
+}
+li.selected {
+  background-color: #5F6DBE;
+}
+li:hover {
+  background-color: #92A0F1;
+}
+
+li.item {
+  background-color: cornflowerblue;
+}
+li.item-selected {
+  background-color: #5F6DBE;
+}
+li.item:hover, li.item-selected:hover {
+  background-color: #92A0F1;
+}
+
+li.finish {
+  background-color: #808080;
+}
+li.finish-selected {
+  background-color: #666666;
+}
+li.finish:hover, li.finish-selected:hover {
+  background-color: #999999;
+}
+
+li.cancel {
+  background-color: #EE7788;
+}
+li.cancel-selected {
+  background-color: #BE5F6D;
+}
+li.cancel:hover, li.cancel-selected:hover {
+  background-color: #F192A0;
+}
+
+li:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+li:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.item-panel label{
+  display: block;
+  padding:5px 0px 0px 0px;
+  color: #fff;
+}
+
+.filter-panel {
+  position: absolute;
+  left: calc(100% - 35% - 5px);
+  top: 32px;
+  width: 35%;
+}
+.filter-panel select{
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+.filter-panel option{
+  padding: 5px;
+}
+
+h4 {
+  /*background-color: blueviolet;*/
+  margin: 0px;
+  padding: 5px 5px 10px 5px;
+}
+#panelLeft h4 {
+  color: cornflowerblue;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+#panelRight h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+a.btn-action {
+  /*background-color: orangered;*/
+  cursor: pointer;
+  padding-left: 5px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+a.btn-action:hover {
+  color: magenta;
+}
+a.btn-action span:before {
+  content: " ";
+}
+
+#btnBackList {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .left-panel {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .right-panel {
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #btnBackList {
+    display: block;
+  }
+}

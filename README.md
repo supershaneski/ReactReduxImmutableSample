@@ -1,10 +1,22 @@
+# A Study On React/Redux Using Immutable
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Description
+
+Another React + Redux project. A bit more complicated than the last one.<br>
+Also using ImmutableJS.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm install`
+
+Will install the modules used.
+
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
